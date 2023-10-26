@@ -1,0 +1,15 @@
+﻿<Page x:Class="sportschool_kees_spel.CustomizeScreen"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:sportschool_kees_spel"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CustomizeScreen">
+
+    <Grid>
+        <Button x:Name="Hoofd_Links_Knop" Click="Hoofd_Links" Content="Links" FontSize="20" FontWeight="Bold" Background="White" Width="64" Height="64" Margin="604,193,132,193" />
+        <Button x:Name="Hoofd_Rechts_Knop" Click="Hoofd_Rechts" Content="Rechts" FontSize="20" FontWeight="Bold" Background="White" Width="64" Height="64" Margin="132,193,604,193" />
+    </Grid>
+</Page>

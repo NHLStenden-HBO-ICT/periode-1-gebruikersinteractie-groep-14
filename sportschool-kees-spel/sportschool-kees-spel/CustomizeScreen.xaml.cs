@@ -16,28 +16,32 @@ using System.Windows.Shapes;
 namespace sportschool_kees_spel
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for CustomizeScreen.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class CustomizeScreen : Page
     {
-        public MainWindow()
+        public CustomizeScreen()
         {
             InitializeComponent();
+
+            int selectedOption = 0;
+
+            switch (selectedOption)
+            {
+                case 0:
+                    Console.WriteLine("Succes!");
+                    break;
+            }
         }
 
-        private void BtnClickCSW(object sender, RoutedEventArgs e)
+        private void Hoofd_Links(object sender, RoutedEventArgs e)
         {
-            Main.Content = new CustomizeScreen();
+            MessageBox.Show("Links");
         }
 
-        private void BtnClickCSW2(object sender, RoutedEventArgs e)
+        private void Hoofd_Rechts(object sender, RoutedEventArgs e)
         {
-            Main.Content = new Page2();
-        }
-
-        private void Main_Navigated(object sender, NavigationEventArgs e)
-        {
-
+            MessageBox.Show("Rechts");
         }
     }
 }

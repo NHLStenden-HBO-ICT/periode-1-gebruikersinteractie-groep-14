@@ -16,28 +16,13 @@ using System.Windows.Shapes;
 namespace sportschool_kees_spel
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Page2.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Page2 : Page
     {
-        public MainWindow()
+        public Page2()
         {
             InitializeComponent();
-        }
-
-        private void BtnClickCSW(object sender, RoutedEventArgs e)
-        {
-            Main.Content = new CustomizeScreen();
-        }
-
-        private void BtnClickCSW2(object sender, RoutedEventArgs e)
-        {
-            Main.Content = new Page2();
-        }
-
-        private void Main_Navigated(object sender, NavigationEventArgs e)
-        {
-
         }
     }
 }
