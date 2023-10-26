@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace sportschool_kees_spel
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for ExtraPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ExtraPage : Page
     {
-        public MainWindow()
+        public ExtraPage()
         {
             InitializeComponent();
         }
