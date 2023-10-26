@@ -1,0 +1,36 @@
+﻿<Page x:Class="sportschool_kees_spel.Startscherm"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:sportschool_kees_spel"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920"
+      Title="Startscherm">
+
+    <Grid>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Image Grid.Column="1" Source="c:\users\marti\onedrive - nhl stenden\periode-1-gebruikersinteractie-groep-14\sportschool-kees-spel\sportschool-kees-spel\images\startscherm.webp"/>
+            <StackPanel>
+                <Label Grid.Row="0"
+                           FontFamily="Squada One"
+                           FontSize="48"
+                           FontWeight="Bold"
+                           Foreground="White"
+                           VerticalContentAlignment="Top"
+                           HorizontalContentAlignment="Left"
+                           Content ="Welkom, Kees" />
+                <Button Click="StartButtonClick">Start</Button>
+                <Button Click="ExtraButtonClick">Extra</Button>
+                <Button Click="OptiesButtonClick">Opties</Button>
+                <Button Click="HelpButtonClick">Help</Button>
+                <Button Click="GegevensButtonClick">Gegevens</Button>
+                <Button Click="ExitButtonClick" Height="44" Width="268" Content="Exit"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>
