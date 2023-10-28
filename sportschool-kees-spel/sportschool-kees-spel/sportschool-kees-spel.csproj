@@ -10,6 +10,11 @@
 
   <ItemGroup>
     <None Remove="Images\Black_shadow.png" />
+    <None Remove="Images\Icons\1.png" />
+    <None Remove="Images\Icons\2.png" />
+    <None Remove="Images\Icons\3.png" />
+    <None Remove="Images\Icons\4.png" />
+    <None Remove="Images\Icons\5.png" />
     <None Remove="Images\Icons\UI_Icon_ArrowLeft.png" />
     <None Remove="Images\Icons\UI_Icon_ArrowLeftRight.png" />
     <None Remove="Images\Icons\UI_Icon_ArrowRight.png" />
@@ -17,6 +22,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\Icons\1.png" />
+    <Resource Include="Images\Icons\2.png" />
+    <Resource Include="Images\Icons\3.png" />
+    <Resource Include="Images\Icons\4.png" />
+    <Resource Include="Images\Icons\5.png" />
     <Resource Include="Images\Icons\UI_Icon_ArrowLeft.png" />
   </ItemGroup>
 

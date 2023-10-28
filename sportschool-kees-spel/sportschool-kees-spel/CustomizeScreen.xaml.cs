@@ -21,7 +21,7 @@ namespace sportschool_kees_spel
     public partial class CustomizeScreen : Page
     {
         int EquippedValue = 1;
-        int maxValue = 9;
+        int maxValue = 4;
         int minValue = 2;
         string EquippedValueString = string.Empty;
         public CustomizeScreen()
@@ -35,34 +35,19 @@ namespace sportschool_kees_spel
             switch (EquippedValue)
             {
                 case 1:
-                    MessageBox.Show("1");
+                    SelectedHead.Source = new BitmapImage(new Uri("Images/Icons/1.png", UriKind.Relative));
                     break;
                 case 2:
-                    MessageBox.Show("2");
+                    SelectedHead.Source = new BitmapImage(new Uri("Images/Icons/2.png", UriKind.Relative));
                     break;
                 case 3:
-                    MessageBox.Show("3");
+                    SelectedHead.Source = new BitmapImage(new Uri("Images/Icons/3.png", UriKind.Relative));
                     break;
                 case 4:
-                    MessageBox.Show("4");
+                    SelectedHead.Source = new BitmapImage(new Uri("Images/Icons/4.png", UriKind.Relative));
                     break;
                 case 5:
-                    MessageBox.Show("5");
-                    break;
-                case 6:
-                    MessageBox.Show("6");
-                    break;
-                case 7:
-                    MessageBox.Show("7");
-                    break;
-                case 8:
-                    MessageBox.Show("8");
-                    break;
-                case 9:
-                    MessageBox.Show("9");
-                    break;
-                case 10:
-                    MessageBox.Show("10");
+                    SelectedHead.Source = new BitmapImage(new Uri("Images/Icons/5.png", UriKind.Relative));
                     break;
             }
         }
