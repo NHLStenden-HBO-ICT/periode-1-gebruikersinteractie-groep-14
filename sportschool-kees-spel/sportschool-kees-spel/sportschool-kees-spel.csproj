@@ -8,4 +8,25 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Images\Black_shadow.png" />
+    <None Remove="Images\Icons\UI_Icon_ArrowLeft.png" />
+    <None Remove="Images\Icons\UI_Icon_ArrowLeftRight.png" />
+    <None Remove="Images\Icons\UI_Icon_ArrowRight.png" />
+    <None Remove="Images\Startscherm.webp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Icons\UI_Icon_ArrowLeft.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Black_shadow.png" />
+    <Resource Include="Images\Icons\UI_Icon_ArrowRight.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Startscherm.webp" />
+  </ItemGroup>
+
 </Project>

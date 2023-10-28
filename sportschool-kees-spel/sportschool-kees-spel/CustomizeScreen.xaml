@@ -5,11 +5,18 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:sportschool_kees_spel"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="CustomizeScreen">
+      d:DesignHeight="1080" d:DesignWidth="1600"
+      Title="CustomizeScreen" Background="#586c70" Width="1600" Height="1080">
 
     <Grid>
-        <Button x:Name="Hoofd_Links_Knop" Click="Hoofd_Links" Content="Links" FontSize="20" FontWeight="Bold" Background="White" Width="64" Height="64" Margin="604,193,132,193" />
-        <Button x:Name="Hoofd_Rechts_Knop" Click="Hoofd_Rechts" Content="Rechts" FontSize="20" FontWeight="Bold" Background="White" Width="64" Height="64" Margin="132,193,604,193" />
+        <Button x:Name="Hoofd_Links_Knop" Click="Hoofd_Links" Width="128" Height="128" Margin="450,202,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="#00000000" Background="#00707070">
+            <Image Source="Images/Icons/UI_Icon_ArrowLeft.png"></Image>
+        </Button>
+        <Button x:Name="Hoofd_Rechts_Knop" Click="Hoofd_Rechts" Width="128" Height="128" Margin="1022,202,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="#00000000" Background="#00707070">
+            <Image Source="Images/Icons/UI_Icon_ArrowRight.png"></Image>
+        </Button>
+        <TextBox Name="NumberTest" Background="#00707070" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="150" FontWeight="Bold" Margin="0,165,0,0" Foreground="White" SelectionTextBrush="Transparent" SelectionBrush="Transparent" BorderBrush="Transparent" IsHitTestVisible="False">
+            1
+        </TextBox>
     </Grid>
 </Page>

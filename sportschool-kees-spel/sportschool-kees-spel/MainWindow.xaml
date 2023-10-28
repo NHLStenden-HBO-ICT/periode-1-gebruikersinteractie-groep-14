@@ -5,18 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:sportschool_kees_spel"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Background="#6d92ac">
+        Title="Sportschool Spel" Height="1080" Width="1920" Background="#586C70">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="609*"/>
             <ColumnDefinition Width="191*"/>
         </Grid.ColumnDefinitions>
-        <StackPanel Height="200" HorizontalAlignment="Left" VerticalAlignment="Center">
-            <Button Content="Page1" MinWidth="100" MinHeight="40" Click="BtnClickCSW" Background="#FFF3C9A6"/>
-            <Button Content="Page2" MinWidth="100" MinHeight="40" Margin="0,10,0,0" Click="BtnClickCSW2" Background="#FFF3C9A6"/>
-            <Button Content="Page3" MinWidth="100" MinHeight="40" Margin="0,10,0,0" Click="BtnClickCSW2" Background="#FFF3C9A6"/>
-            <Button Content="Page4" MinWidth="100" MinHeight="40" Margin="0,10,0,0" Click="BtnClickCSW2" Background="#FFF3C9A6"/>
+        <Image Source="Images/Startscherm.webp" Grid.ColumnSpan="2" Margin="390,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Height="1066" Width="1600"/>
+        <StackPanel Height="500" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Button Content="Page1" MinWidth="250" MinHeight="75" Margin="70,0,0,0" Click="BtnClickCSW" Background="#6D92AC" BorderBrush="Black" BorderThickness="3px"/>
+            <Button Content="Page2" MinWidth="250" MinHeight="75" Margin="70,58,0,0" Click="BtnClickCSW2" Background="#6D92AC" BorderBrush="Black" BorderThickness="3px"/>
+            <Button Content="Page3" MinWidth="250" MinHeight="75" Margin="70,58,0,0" Click="BtnClickCSW2" Background="#6D92AC" BorderBrush="Black" BorderThickness="3px"/>
+            <Button Content="Page4" MinWidth="250" MinHeight="75" Margin="70,58,0,0" Click="BtnClickCSW2" Background="#6D92AC" BorderBrush="Black" BorderThickness="3px"/>
         </StackPanel>
-        <Frame x:Name="Main" Margin="100,0,0,0" NavigationUIVisibility="Hidden" Grid.ColumnSpan="2" Navigated="Main_Navigated" Background="#586c70"/>
+        <Frame x:Name="Main" Margin="390,0,0,0" NavigationUIVisibility="Hidden" Grid.ColumnSpan="2" Navigated="Main_Navigated"/>
+        <Image Source="Images/Black_shadow.png" Margin="-234,0,235,0" Height="1064" VerticalAlignment="Center"/>
     </Grid>
 </Window>
