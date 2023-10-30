@@ -9,15 +9,19 @@
       Title="CustomizeScreen" Background="#586c70" Width="1600" Height="1080">
 
     <Grid>
-        <Button x:Name="Hoofd_Links_Knop" Click="Hoofd_Links" Width="128" Height="128" Margin="450,202,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="#00000000" Background="#00707070">
+        <Button x:Name="Hoofd_Links_Knop" Click="Hoofd_Links" Width="128" Height="128" Margin="450,290,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="#00000000" Background="#00707070">
             <Image Source="Images/Icons/UI_Icon_ArrowLeft.png"></Image>
         </Button>
-        <Button x:Name="Hoofd_Rechts_Knop" Click="Hoofd_Rechts" Width="128" Height="128" Margin="1022,202,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="#00000000" Background="#00707070">
+        <Button x:Name="Hoofd_Rechts_Knop" Click="Hoofd_Rechts" Width="128" Height="128" Margin="1022,290,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="#00000000" Background="#00707070">
             <Image Source="Images/Icons/UI_Icon_ArrowRight.png"></Image>
         </Button>
-        <Image Name="SelectedHead" Source="Images/Icons/1.png" Width="128" Height="128"/>
-        <TextBox Name="NumberTest" Background="#00707070" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="150" FontWeight="Bold" Margin="0,165,0,0" Foreground="White" SelectionTextBrush="Transparent" SelectionBrush="Transparent" BorderBrush="Transparent" IsHitTestVisible="False">
-            1
-        </TextBox>
+        <Button x:Name="Shirt_Links_Knop" Click="Shirt_Links" Width="128" Height="128" Margin="450,550,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="#00000000" Background="#00707070">
+            <Image Source="Images/Icons/UI_Icon_ArrowLeft.png"></Image>
+        </Button>
+        <Button x:Name="Shirt_Rechts_Knop" Click="Shirt_Rechts" Width="128" Height="128" Margin="1022,550,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="#00000000" Background="#00707070">
+            <Image Source="Images/Icons/UI_Icon_ArrowRight.png"></Image>
+        </Button>
+        <Image Name="PlayerCharacter" Source="Images/Speler/Speler1.png" Width="500" Height="500" Margin="586,290,514,290"/>
+        <Image Name="PlayerHair" Source="Images/Speler/Haar1.png" Width="500" Height="500" Margin="586,290,514,290"/>
     </Grid>
 </Page>

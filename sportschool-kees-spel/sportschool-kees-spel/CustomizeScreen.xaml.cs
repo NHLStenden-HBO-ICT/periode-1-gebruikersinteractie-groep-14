@@ -20,67 +20,128 @@ namespace sportschool_kees_spel
     /// </summary>
     public partial class CustomizeScreen : Page
     {
-        int EquippedValue = 1;
-        int maxValue = 4;
-        int minValue = 2;
-        string EquippedValueString = string.Empty;
+        int EquippedHeadValue = 1;
+        int maxHeadValue = 7; // max waarde - 1
+        int minHeadValue = 2;
+
+        int EquippedShirtValue = 1;
+        int maxShirtValue = 3; // max waarde - 1
+        int minShirtValue = 2;
         public CustomizeScreen()
         {
             InitializeComponent();
         }
 
+        private void SavedFit()
+        {
+            ShirtSwitch();
+            HeadwearSwitch();
+        }
+
         private void HeadwearSwitch()
         {
-            InitializeComponent();
-            switch (EquippedValue)
+            switch (EquippedHeadValue)
             {
                 case 1:
-                    SelectedHead.Source = new BitmapImage(new Uri("Images/Icons/1.png", UriKind.Relative));
+                    PlayerHair.Source = new BitmapImage(new Uri("Images/Speler/Haar1.png", UriKind.Relative));
                     break;
                 case 2:
-                    SelectedHead.Source = new BitmapImage(new Uri("Images/Icons/2.png", UriKind.Relative));
+                    PlayerHair.Source = new BitmapImage(new Uri("Images/Speler/Haar2.png", UriKind.Relative));
                     break;
                 case 3:
-                    SelectedHead.Source = new BitmapImage(new Uri("Images/Icons/3.png", UriKind.Relative));
+                    PlayerHair.Source = new BitmapImage(new Uri("Images/Speler/Haar3.png", UriKind.Relative));
                     break;
                 case 4:
-                    SelectedHead.Source = new BitmapImage(new Uri("Images/Icons/4.png", UriKind.Relative));
+                    PlayerHair.Source = new BitmapImage(new Uri("Images/Speler/Haar4.png", UriKind.Relative));
                     break;
                 case 5:
-                    SelectedHead.Source = new BitmapImage(new Uri("Images/Icons/5.png", UriKind.Relative));
+                    PlayerHair.Source = new BitmapImage(new Uri("Images/Speler/Haar5.png", UriKind.Relative));
                     break;
+                case 6:
+                    PlayerHair.Source = new BitmapImage(new Uri("Images/Speler/Haar6.png", UriKind.Relative));
+                    break;
+                case 7:
+                    PlayerHair.Source = new BitmapImage(new Uri("Images/Speler/Haar7.png", UriKind.Relative));
+                    break;
+                case 8:
+                    PlayerHair.Source = new BitmapImage(new Uri("Images/Speler/Haar8.png", UriKind.Relative));
+                    break;
+            }
+        }
+
+        private void ShirtSwitch()
+        {
+            switch (EquippedShirtValue)
+            {
+                case 1:
+                    PlayerCharacter.Source = new BitmapImage(new Uri("Images/Speler/Speler1.png", UriKind.Relative));
+                    break;
+                case 2:
+                    PlayerCharacter.Source = new BitmapImage(new Uri("Images/Speler/Speler2.png", UriKind.Relative));
+                    break;
+                case 3:
+                    PlayerCharacter.Source = new BitmapImage(new Uri("Images/Speler/Speler3.png", UriKind.Relative));
+                    break;
+                case 4:
+                    PlayerCharacter.Source = new BitmapImage(new Uri("Images/Speler/Speler4.png", UriKind.Relative));
+                    break;
+                case 5:
+                    PlayerCharacter.Source = new BitmapImage(new Uri("Images/Speler/Speler5.png", UriKind.Relative));
             }
         }
 
         private void Hoofd_Links(object sender, RoutedEventArgs e)
         {
-            if (EquippedValue >= minValue)
+            if (EquippedHeadValue >= minHeadValue)
             {
-                EquippedValue--;
+                EquippedHeadValue--;
             }
             else
             {
-                EquippedValue = maxValue + 1;
+                EquippedHeadValue = maxHeadValue + 1;
             }
-            EquippedValueString = EquippedValue.ToString();
-            NumberTest.Text = EquippedValueString;
-            HeadwearSwitch();
+            SavedFit();
+
 
         }
 
         private void Hoofd_Rechts(object sender, RoutedEventArgs e)
         {
-            if (EquippedValue <= maxValue)
+            if (EquippedHeadValue <= maxHeadValue)
             {
-                EquippedValue++;
+                EquippedHeadValue++;
             }
             else
             {
-                EquippedValue = minValue - 1;
+                EquippedHeadValue = minHeadValue - 1;
             }
-            EquippedValueString = EquippedValue.ToString();
-            NumberTest.Text = EquippedValueString;
-            HeadwearSwitch();
+            SavedFit();
+        }
+
+        private void Shirt_Rechts(object sender, RoutedEventArgs e)
+        {
+            if (EquippedShirtValue <= maxShirtValue)
+            {
+                EquippedShirtValue++;
+            }
+            else
+            {
+                EquippedShirtValue = minShirtValue - 1;
+            }
+            SavedFit();
+        }
+
+        private void Shirt_Links(object sender, RoutedEventArgs e)
+        {
+            if (EquippedShirtValue >= minShirtValue)
+            {
+                EquippedShirtValue--;
+            }
+            else
+            {
+                EquippedShirtValue = maxShirtValue + 1;
+            }
+            SavedFit();
         }
     }
 }
