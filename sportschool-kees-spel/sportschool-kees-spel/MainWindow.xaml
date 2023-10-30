@@ -1,0 +1,24 @@
+﻿<Window x:Class="sportschool_kees_spel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:sportschool_kees_spel"
+        mc:Ignorable="d"
+        Title="Sportschool Spel" Height="1080" Width="1920" Background="#586C70">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="609*"/>
+            <ColumnDefinition Width="191*"/>
+        </Grid.ColumnDefinitions>
+        <Image Source="Images/Startscherm.webp" Grid.ColumnSpan="2" Margin="390,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Height="1066" Width="1600"/>
+        <StackPanel Height="500" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Button Content="Page1" MinWidth="250" MinHeight="75" Margin="70,0,0,0" Click="BtnClickCSW" Background="#6D92AC" BorderBrush="Black" BorderThickness="3px"/>
+            <Button Content="Page2" MinWidth="250" MinHeight="75" Margin="70,58,0,0" Click="BtnClickCSW2" Background="#6D92AC" BorderBrush="Black" BorderThickness="3px"/>
+            <Button Content="Page3" MinWidth="250" MinHeight="75" Margin="70,58,0,0" Click="BtnClickCSW2" Background="#6D92AC" BorderBrush="Black" BorderThickness="3px"/>
+            <Button Content="Page4" MinWidth="250" MinHeight="75" Margin="70,58,0,0" Click="BtnClickCSW2" Background="#6D92AC" BorderBrush="Black" BorderThickness="3px"/>
+        </StackPanel>
+        <Frame x:Name="Main" Margin="390,0,0,0" NavigationUIVisibility="Hidden" Grid.ColumnSpan="2" Navigated="Main_Navigated"/>
+        <Image Source="Images/Black_shadow.png" Margin="-234,0,235,0" Height="1064" VerticalAlignment="Center"/>
+    </Grid>
+</Window>

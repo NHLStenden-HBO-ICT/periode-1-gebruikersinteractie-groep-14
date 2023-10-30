@@ -12,17 +12,37 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Configuration;
 
 namespace sportschool_kees_spel
 {
     /// <summary>
-    /// Interaction logic for ExtraPage.xaml
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class ExtraPage : Page
+    public partial class MainWindow : Window
     {
-        public ExtraPage()
+
+        Configuration AppConfig = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+
+        public MainWindow()
         {
             InitializeComponent();
+
+        }
+
+        private void BtnClickCSW(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new CustomizeScreen();
+        }
+
+        private void BtnClickCSW2(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new Page2();
+        }
+
+        private void Main_Navigated(object sender, NavigationEventArgs e)
+        {
+
         }
     }
 }

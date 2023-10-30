@@ -1,18 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
-using System.Data;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace sportschool_kees_spel
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
-    public partial class App : Application
+    public partial class Page2 : Page
     {
+        public Page2()
+        {
+            InitializeComponent();
 
+        }
     }
 }
