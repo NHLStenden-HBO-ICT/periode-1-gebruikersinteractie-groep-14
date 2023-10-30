@@ -85,8 +85,6 @@ namespace sportschool_kees_spel
                 case 4:
                     PlayerCharacter.Source = new BitmapImage(new Uri("Images/Speler/Speler4.png", UriKind.Relative));
                     break;
-                case 5:
-                    PlayerCharacter.Source = new BitmapImage(new Uri("Images/Speler/Speler5.png", UriKind.Relative));
             }
         }
 
