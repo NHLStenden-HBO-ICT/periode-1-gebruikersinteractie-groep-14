@@ -5,10 +5,12 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:sportschool_kees_spel"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="1080" d:DesignWidth="1920" Background="DarkCyan"
       Title="LevelSelectiePage">
 
     <Grid>
-        
+        <Image  Source="/Images/Speler/Speler1.png" HorizontalAlignment="Center" VerticalAlignment="Center" Width="800" Height="800"/>
+        <Image Source="/Images/Speler/Haar1.png" HorizontalAlignment="Center" VerticalAlignment="Center" Width="800" Height="800"/>
+
     </Grid>
 </Page>

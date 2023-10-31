@@ -8,17 +8,19 @@
         Title="Sportschool Spel" Height="1080" Width="1920" Background="#586C70">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="609*"/>
-            <ColumnDefinition Width="191*"/>
+            <ColumnDefinition Width="1462*"/>
+            <ColumnDefinition Width="437*"/>
+            <ColumnDefinition Width="22*"/>
         </Grid.ColumnDefinitions>
-        <Image Source="Images/Startscherm.webp" Grid.ColumnSpan="2" Margin="390,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Height="1066" Width="1600"/>
+        <Image Source="Images/Startscherm.webp" Grid.ColumnSpan="3" Margin="390,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Height="1066" Width="1600"/>
         <StackPanel Height="500" HorizontalAlignment="Left" VerticalAlignment="Center">
             <Button Content="Page1" MinWidth="250" MinHeight="75" Margin="70,0,0,0" Click="BtnClickCSW" Background="#6D92AC" BorderBrush="Black" BorderThickness="3px"/>
             <Button Content="Page2" MinWidth="250" MinHeight="75" Margin="70,58,0,0" Click="BtnClickCSW2" Background="#6D92AC" BorderBrush="Black" BorderThickness="3px"/>
-            <Button Content="Page3" MinWidth="250" MinHeight="75" Margin="70,58,0,0" Click="BtnClickCSW2" Background="#6D92AC" BorderBrush="Black" BorderThickness="3px"/>
+            <Button Content="Page3" MinWidth="250" MinHeight="75" Margin="70,58,0,0" Click="BtnClickCSW3" Background="#6D92AC" BorderBrush="Black" BorderThickness="3px"/>
             <Button Content="Page4" MinWidth="250" MinHeight="75" Margin="70,58,0,0" Click="BtnClickCSW2" Background="#6D92AC" BorderBrush="Black" BorderThickness="3px"/>
         </StackPanel>
-        <Frame x:Name="Main" Margin="390,0,0,0" NavigationUIVisibility="Hidden" Grid.ColumnSpan="2" Navigated="Main_Navigated"/>
+        <Frame x:Name="Main" Margin="390,0,0,0" NavigationUIVisibility="Hidden" Grid.ColumnSpan="3" Navigated="Main_Navigated"/>
         <Image Source="Images/Black_shadow.png" Margin="-234,0,235,0" Height="1064" VerticalAlignment="Center"/>
+        <Frame x:Name="Games" NavigationUIVisibility="Hidden" Width="1920" Height="1080" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.ColumnSpan="3" Margin="0,0,0,0"/>
     </Grid>
 </Window>

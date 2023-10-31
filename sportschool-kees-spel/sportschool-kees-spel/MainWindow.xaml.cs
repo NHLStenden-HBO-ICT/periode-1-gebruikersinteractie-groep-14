@@ -9,10 +9,10 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Configuration;
 
 namespace sportschool_kees_spel
 {
@@ -21,13 +21,9 @@ namespace sportschool_kees_spel
     /// </summary>
     public partial class MainWindow : Window
     {
-
-        Configuration AppConfig = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-
         public MainWindow()
         {
             InitializeComponent();
-
         }
 
         private void BtnClickCSW(object sender, RoutedEventArgs e)
@@ -43,6 +39,11 @@ namespace sportschool_kees_spel
         private void Main_Navigated(object sender, NavigationEventArgs e)
         {
 
+        }
+
+        private void BtnClickCSW3(object sender, RoutedEventArgs e)
+        {
+            Games.Content = new LevelSelectiePage(1, 1);
         }
     }
 }

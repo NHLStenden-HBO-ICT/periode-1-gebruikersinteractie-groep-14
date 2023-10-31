@@ -14,7 +14,7 @@
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition Width="3*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Image Grid.Column="1" Source="c:\users\marti\onedrive - nhl stenden\periode-1-gebruikersinteractie-groep-14\sportschool-kees-spel\sportschool-kees-spel\images\startscherm.webp"/>
+            <Image Grid.Column="1" Source="images\startscherm.webp"/>
             <StackPanel>
                 <Label Grid.Row="0"
                            FontFamily="Squada One"

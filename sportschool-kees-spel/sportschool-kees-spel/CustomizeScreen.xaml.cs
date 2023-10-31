@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,16 +29,24 @@ namespace sportschool_kees_spel
         int EquippedShirtValue = 1;
         int maxShirtValue = 3; // max waarde - 1
         int minShirtValue = 2;
+        private int spelerHaar;
+        private int spelerShirt;
+
         public CustomizeScreen()
         {
             InitializeComponent();
+
+            LevelSelectiePage test = new LevelSelectiePage(spelerHaar, spelerShirt);
         }
 
         private void SavedFit()
         {
             ShirtSwitch();
             HeadwearSwitch();
-        }
+
+        } 
+
+
 
         private void HeadwearSwitch()
         {
