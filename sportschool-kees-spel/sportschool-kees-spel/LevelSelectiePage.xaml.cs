@@ -1,4 +1,5 @@
-﻿using System;
+﻿using sportschool_kees_spel.Properties;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,57 +22,14 @@ namespace sportschool_kees_spel
     /// </summary>
     public partial class LevelSelectiePage : Page
     {
-
-        ImageBrush spelerHaarBrush = new ImageBrush();
-        ImageBrush spelerShirtBrush = new ImageBrush();
-
-        public LevelSelectiePage(int spelerHaar, int spelerShirt)
+        public LevelSelectiePage()
         {
             InitializeComponent();
+        }
 
-            switch (spelerHaar)
-            {
-                case 1:
-                    spelerShirtBrush.ImageSource = new BitmapImage(new Uri("Images/Speler/Haar1.png", UriKind.Relative));
-                    break;
-                case 2:
-                    spelerShirtBrush.ImageSource = new BitmapImage(new Uri("Images/Speler/Haar2.png", UriKind.Relative));
-                    break;
-                case 3:
-                    spelerShirtBrush.ImageSource = new BitmapImage(new Uri("Images/Speler/Haar3.png", UriKind.Relative));
-                    break;
-                case 4:
-                    spelerShirtBrush.ImageSource = new BitmapImage(new Uri("Images/Speler/Haar4.png", UriKind.Relative));
-                    break;
-                case 5:
-                    spelerShirtBrush.ImageSource = new BitmapImage(new Uri("Images/Speler/Haar5.png", UriKind.Relative));
-                    break;
-                case 6:
-                    spelerShirtBrush.ImageSource = new BitmapImage(new Uri("Images/Speler/Haar6.png", UriKind.Relative));
-                    break;
-                case 7:
-                    spelerShirtBrush.ImageSource = new BitmapImage(new Uri("Images/Speler/Haar7.png", UriKind.Relative));
-                    break;
-                case 8:
-                    spelerShirtBrush.ImageSource = new BitmapImage(new Uri("Images/Speler/Haar8.png", UriKind.Relative));
-                    break;
-            }
-
-            switch (spelerShirt)
-            {
-                case 1:
-                    spelerHaarBrush.ImageSource = new BitmapImage(new Uri("Images/Speler/Speler1.png", UriKind.Relative));
-                    break;
-                case 2:
-                    spelerHaarBrush.ImageSource = new BitmapImage(new Uri("Images/Speler/Speler2.png", UriKind.Relative));
-                    break;
-                case 3:
-                    spelerHaarBrush.ImageSource = new BitmapImage(new Uri("Images/Speler/Speler3.png", UriKind.Relative));
-                    break;
-                case 4:
-                    spelerHaarBrush.ImageSource = new BitmapImage(new Uri("Images/Speler/Speler4.png", UriKind.Relative));
-                    break;
-            }
+        private void goBack(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(null);
         }
     }
 }

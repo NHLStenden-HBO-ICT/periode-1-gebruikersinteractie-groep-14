@@ -26,24 +26,34 @@ namespace sportschool_kees_spel
             InitializeComponent();
         }
 
-        private void BtnClickCSW(object sender, RoutedEventArgs e)
-        {
-            Main.Content = new CustomizeScreen();
-        }
-
-        private void BtnClickCSW2(object sender, RoutedEventArgs e)
-        {
-            Main.Content = new Page2();
-        }
-
         private void Main_Navigated(object sender, NavigationEventArgs e)
         {
 
         }
 
-        private void BtnClickCSW3(object sender, RoutedEventArgs e)
+        private void Afsluiten(object sender, RoutedEventArgs e)
         {
-            Games.Content = new LevelSelectiePage(1, 1);
+            Close();
+        }
+
+        private void beginGame(object sender, RoutedEventArgs e)
+        {
+            Games.Content = new LevelSelectiePage();
+        }
+
+        private void gotoCustom(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new CustomizeScreen();
+        }
+
+        private void gotoInfo(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void gotoLeaderbord(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

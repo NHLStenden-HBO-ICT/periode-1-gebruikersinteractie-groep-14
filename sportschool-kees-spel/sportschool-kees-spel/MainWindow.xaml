@@ -13,11 +13,13 @@
             <ColumnDefinition Width="22*"/>
         </Grid.ColumnDefinitions>
         <Image Source="Images/Startscherm.webp" Grid.ColumnSpan="3" Margin="390,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Height="1066" Width="1600"/>
-        <StackPanel Height="500" HorizontalAlignment="Left" VerticalAlignment="Center">
-            <Button Content="Page1" MinWidth="250" MinHeight="75" Margin="70,0,0,0" Click="BtnClickCSW" Background="#6D92AC" BorderBrush="Black" BorderThickness="3px"/>
-            <Button Content="Page2" MinWidth="250" MinHeight="75" Margin="70,58,0,0" Click="BtnClickCSW2" Background="#6D92AC" BorderBrush="Black" BorderThickness="3px"/>
-            <Button Content="Page3" MinWidth="250" MinHeight="75" Margin="70,58,0,0" Click="BtnClickCSW3" Background="#6D92AC" BorderBrush="Black" BorderThickness="3px"/>
-            <Button Content="Page4" MinWidth="250" MinHeight="75" Margin="70,58,0,0" Click="BtnClickCSW2" Background="#6D92AC" BorderBrush="Black" BorderThickness="3px"/>
+        <StackPanel Height="1080" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0 0,0,0">
+            <Button Content="Beginnen" MinWidth="250" MinHeight="75" Margin="70,300,0,0" Click="beginGame" Background="#6D92AC" BorderBrush="Black" BorderThickness="3px"/>
+            <Button Content="Speler" MinWidth="250" MinHeight="75" Margin="70,58,0,0" Click="gotoCustom" Background="#6D92AC" BorderBrush="Black" BorderThickness="3px"/>
+            <Button Content="Info" MinWidth="250" MinHeight="75" Margin="70,58,0,0" Click="gotoInfo" Background="#6D92AC" BorderBrush="Black" BorderThickness="3px"/>
+            <Button Content="Podium" MinWidth="250" MinHeight="75" Margin="70,58,0,0" Click="gotoLeaderbord" Background="#6D92AC" BorderBrush="Black" BorderThickness="3px"/>
+            <Button Content="Afsluiten" MaxWidth="100" MinHeight="60" Margin="10,210,150,0" Click="Afsluiten" Background="#6D92AC" BorderBrush="Black" BorderThickness="3px"/>
+
         </StackPanel>
         <Frame x:Name="Main" Margin="390,0,0,0" NavigationUIVisibility="Hidden" Grid.ColumnSpan="3" Navigated="Main_Navigated"/>
         <Image Source="Images/Black_shadow.png" Margin="-234,0,235,0" Height="1064" VerticalAlignment="Center"/>

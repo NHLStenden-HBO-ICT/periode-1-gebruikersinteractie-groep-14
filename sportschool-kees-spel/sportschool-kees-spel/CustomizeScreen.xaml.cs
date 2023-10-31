@@ -29,20 +29,25 @@ namespace sportschool_kees_spel
         int EquippedShirtValue = 1;
         int maxShirtValue = 3; // max waarde - 1
         int minShirtValue = 2;
-        private int spelerHaar;
-        private int spelerShirt;
+
 
         public CustomizeScreen()
         {
-            InitializeComponent();
+            EquippedHeadValue = Properties.Settings.Default.EquippedHead;
+            EquippedShirtValue = Properties.Settings.Default.EquippedShirt;
 
-            LevelSelectiePage test = new LevelSelectiePage(spelerHaar, spelerShirt);
+            InitializeComponent();
+            ShirtSwitch();
+            HeadwearSwitch();
         }
 
         private void SavedFit()
         {
             ShirtSwitch();
             HeadwearSwitch();
+            Properties.Settings.Default.EquippedHead = EquippedHeadValue;
+            Properties.Settings.Default.EquippedShirt = EquippedShirtValue;
+            Properties.Settings.Default.Save();
 
         } 
 
@@ -150,6 +155,11 @@ namespace sportschool_kees_spel
                 EquippedShirtValue = maxShirtValue + 1;
             }
             SavedFit();
+        }
+
+        private void goBack(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(null);
         }
     }
 }

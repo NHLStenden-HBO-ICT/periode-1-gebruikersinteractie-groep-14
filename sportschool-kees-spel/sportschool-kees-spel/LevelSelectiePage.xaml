@@ -9,8 +9,6 @@
       Title="LevelSelectiePage">
 
     <Grid>
-        <Image  Source="/Images/Speler/Speler1.png" HorizontalAlignment="Center" VerticalAlignment="Center" Width="800" Height="800"/>
-        <Image Source="/Images/Speler/Haar1.png" HorizontalAlignment="Center" VerticalAlignment="Center" Width="800" Height="800"/>
-
+        <Button Content="Terug" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="61" Width="121" Click="goBack"/>
     </Grid>
 </Page>
