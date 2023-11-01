@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Microsoft.UI.Xaml;
 
 namespace sportschool_kees_spel
 {
@@ -22,7 +23,6 @@ namespace sportschool_kees_spel
     {
         public GegevensPage()
         {
-            InitializeComponent();
-        }
+            InitializeComponent();        }
     }
 }
