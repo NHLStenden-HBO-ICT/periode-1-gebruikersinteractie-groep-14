@@ -24,7 +24,7 @@ namespace sportschool_kees_spel
         public MainWindow()
         {
             InitializeComponent();
-            //Games.Content = new GegevensPage(); 
+            Gegevens.Content = new GegevensPage();
         }
 
         private void Main_Navigated(object sender, NavigationEventArgs e)

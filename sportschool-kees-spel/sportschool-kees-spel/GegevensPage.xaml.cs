@@ -32,7 +32,7 @@ namespace sportschool_kees_spel
 
         private void beginGame(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(null);
         }
     }
 }
