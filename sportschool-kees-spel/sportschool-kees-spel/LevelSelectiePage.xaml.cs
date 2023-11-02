@@ -23,9 +23,13 @@ namespace sportschool_kees_spel
     /// </summary>
     public partial class LevelSelectiePage : Page
     {
-        public LevelSelectiePage()
+        MainWindow mainWindow;
+
+        public LevelSelectiePage(MainWindow mainWindow)
         {
+            this.mainWindow = mainWindow;
             InitializeComponent();
+
         }
 
         private void goBack(object sender, RoutedEventArgs e)
@@ -35,7 +39,14 @@ namespace sportschool_kees_spel
 
         private void gotoBasketball(object sender, RoutedEventArgs e)
         {
-            Games.Content = new Basketball();
+            NavigationService.Navigate(null);
+
+            this.mainWindow.testFunction();
+        }
+
+        private void Window_KeyDown_1(object sender, KeyEventArgs e)
+        {
+            //bp.MainWindow_KeyDown(sender, e);
         }
     }
 }

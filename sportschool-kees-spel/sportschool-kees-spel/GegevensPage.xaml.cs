@@ -23,6 +23,7 @@ namespace sportschool_kees_spel
     {
         public GegevensPage()
         {
-            InitializeComponent();        }
+            InitializeComponent();        
+        }
     }
 }

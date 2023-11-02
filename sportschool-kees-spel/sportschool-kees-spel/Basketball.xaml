@@ -4,6 +4,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:sportschool_kees_spel"
+      KeyboardNavigation.DirectionalNavigation="Contained"
       mc:Ignorable="d" 
       Title="BasketBall" Width="1920" Height="1080">
 
@@ -27,6 +28,6 @@
         <!-- Basketball players -->
         <Ellipse x:Name="basketballPlayer1" Width="75" Height="75" Fill="Orange" RenderTransformOrigin="0.5,0.5" Canvas.Left="665" Canvas.Top="750" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Ellipse x:Name="basketballPlayer2" Width="75" Height="75" Fill="Red" RenderTransformOrigin="0.5,0.5" Canvas.Left="1176" Canvas.Top="750" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Button Content="Restart" Click="RestartButton_Click" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="940,70,20,20" />
+        <Button Content="Restart" Click="RestartButton_Click" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="940,70,20,20"/>
     </Canvas>
 </Page>

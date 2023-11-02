@@ -85,7 +85,6 @@ namespace sportschool_kees_spel
             player1StartTop = Canvas.GetTop(basketballPlayer1);
             player2StartLeft = Canvas.GetLeft(basketballPlayer2);
             player2StartTop = Canvas.GetTop(basketballPlayer2);
-
         }
 
         private void InitializeScoreDisplay()
@@ -264,7 +263,8 @@ namespace sportschool_kees_spel
                 }
             }
         }
-        private void RestartButton_Click(object sender, RoutedEventArgs e)
+
+        private void reset()
         {
             // Voeg hier code toe om het spel te herstarten
             // Dit kan het resetten van scores, timers en andere game-gerelateerde variabelen omvatten.
@@ -280,6 +280,11 @@ namespace sportschool_kees_spel
             Canvas.SetTop(basketballPlayer1, player1StartTop);
             Canvas.SetLeft(basketballPlayer2, player2StartLeft);
             Canvas.SetTop(basketballPlayer2, player2StartTop);
+        }
+
+        private void RestartButton_Click(object sender, RoutedEventArgs e)
+        {
+            reset();
         }
     }
 }
