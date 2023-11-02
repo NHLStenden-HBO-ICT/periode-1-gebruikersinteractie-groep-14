@@ -10,5 +10,7 @@
 
     <Grid>
         <Button Content="Terug" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="61" Width="121" Click="goBack"/>
+        <Button Content="Basketball" MinWidth="250" MinHeight="75" Margin="666,446,666,384" Click="gotoBasketball" Background="#6D92AC" BorderBrush="Black" BorderThickness="3px"/>
+        <Frame x:Name="Games" NavigationUIVisibility="Hidden" Width="1920" Height="1080" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.ColumnSpan="3" Margin="0,0,0,0"/>
     </Grid>
 </Page>

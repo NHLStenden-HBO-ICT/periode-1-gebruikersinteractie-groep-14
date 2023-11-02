@@ -21,10 +21,10 @@ namespace sportschool_kees_spel
     /// </summary>
     public partial class MainWindow : Window
     {
+        Basketball bp = new Basketball();
         public MainWindow()
         {
-            InitializeComponent();
-            Games.Content = new GegevensPage(); 
+            InitializeComponent(); 
         }
 
         private void Main_Navigated(object sender, NavigationEventArgs e)
@@ -55,6 +55,11 @@ namespace sportschool_kees_spel
         private void gotoLeaderbord(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            bp.MainWindow_KeyDown(sender, e);
         }
     }
 }

@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using Windows.Gaming.Preview;
 
 namespace sportschool_kees_spel
 {
@@ -30,6 +31,11 @@ namespace sportschool_kees_spel
         private void goBack(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(null);
+        }
+
+        private void gotoBasketball(object sender, RoutedEventArgs e)
+        {
+            Games.Content = new Basketball();
         }
     }
 }
