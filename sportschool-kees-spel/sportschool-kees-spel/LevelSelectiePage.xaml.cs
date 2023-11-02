@@ -31,5 +31,11 @@ namespace sportschool_kees_spel
         {
             NavigationService.Navigate(null);
         }
+
+
+        private void gotoTennis(object sender, RoutedEventArgs e)
+        {
+            Games.Content = new Tennis();
+        }
     }
 }
