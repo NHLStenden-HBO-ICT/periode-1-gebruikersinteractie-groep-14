@@ -13,5 +13,6 @@ namespace sportschool_kees_spel
     /// </summary>
     public partial class App : Application
     {
+
     }
 }
