@@ -32,7 +32,14 @@ namespace sportschool_kees_spel
 
         private void beginGame(object sender, RoutedEventArgs e)
         {
+            Properties.Settings.Default.Username = usernameBox.Text;
+            Properties.Settings.Default.Save();
+
+            MainWindow newWindow = new MainWindow();
+            Application.Current.MainWindow = newWindow;
+            newWindow.Show();
             NavigationService.Navigate(null);
+            
         }
     }
 }

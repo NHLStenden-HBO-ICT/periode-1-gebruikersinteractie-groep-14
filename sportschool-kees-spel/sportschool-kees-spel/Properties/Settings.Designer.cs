@@ -49,13 +49,13 @@ namespace sportschool_kees_spel.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string Setting {
+        [global::System.Configuration.DefaultSettingValueAttribute("Kees")]
+        public string Username {
             get {
-                return ((string)(this["Setting"]));
+                return ((string)(this["Username"]));
             }
             set {
-                this["Setting"] = value;
+                this["Username"] = value;
             }
         }
     }

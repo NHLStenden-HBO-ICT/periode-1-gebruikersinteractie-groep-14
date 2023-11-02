@@ -24,7 +24,7 @@ namespace sportschool_kees_spel
         public MainWindow()
         {
             InitializeComponent();
-            Gegevens.Content = new GegevensPage();
+            naam.Text = "Welkom, " + Properties.Settings.Default.Username;
         }
 
         private void Main_Navigated(object sender, NavigationEventArgs e)
@@ -54,6 +54,17 @@ namespace sportschool_kees_spel
 
         private void gotoLeaderbord(object sender, RoutedEventArgs e)
         {
+
+        }
+
+        private void Gegevens_Navigated(object sender, NavigationEventArgs e)
+        {
+
+        }
+
+        private void gotoGegevens(object sender, RoutedEventArgs e)
+        {
+            Gegevens.Content = new GegevensPage();
 
         }
     }
