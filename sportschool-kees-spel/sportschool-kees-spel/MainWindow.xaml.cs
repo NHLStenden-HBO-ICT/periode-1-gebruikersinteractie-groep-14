@@ -25,7 +25,7 @@ namespace sportschool_kees_spel
         Basketball bp = new Basketball();
         public MainWindow()
         {
-            InitializeComponent(); 
+            InitializeComponent();
         }
 
         private void Main_Navigated(object sender, NavigationEventArgs e)
@@ -64,21 +64,27 @@ namespace sportschool_kees_spel
             Games.Content = new Basketball();
         }
 
+        public void gotoTennis()
+        {
+            Games.Content = new Tennis();
+        }
+
         private void Window_KeyDown_1(object sender, KeyEventArgs e)
         {
             bp.MainWindow_KeyDown(sender, e);
 
-        private void Window_KeyDown(object sender, KeyEventArgs e)
-        {
-            tp.OnKeyDown(sender, e);
+            //private void Window_KeyDown(object sender, KeyEventArgs e)
+            //{
+            //    tp.OnKeyDown(sender, e);
+            //}
+
+            //private void Window_KeyUp(object sender, KeyEventArgs e)
+            //{
+            //    tp.OnKeyUp(sender, e);
+            //}
         }
 
-        private void Window_KeyUp(object sender, KeyEventArgs e)
-        {
-            tp.OnKeyUp(sender, e);
-        }
     }
-    
 }
 
 

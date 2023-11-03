@@ -18,9 +18,24 @@ namespace sportschool_kees_spel
     /// </summary>
     public partial class InstructieTennis : Page
     {
-        public InstructieTennis()
+        MainWindow mainWindow;
+
+        public InstructieTennis(MainWindow mainWindow)
         {
             InitializeComponent();
+            this.mainWindow = mainWindow;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(null);
+
+            this.mainWindow.gotoTennis();
+        }
+
+        private void Terug(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(null);
         }
     }
 }
