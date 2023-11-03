@@ -39,14 +39,22 @@ namespace sportschool_kees_spel
 
         private void gotoBasketball(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(null);
-
-            this.mainWindow.testFunction();
+            Games.Content = new InstructieBasketball(mainWindow);
         }
 
         private void Window_KeyDown_1(object sender, KeyEventArgs e)
         {
             //bp.MainWindow_KeyDown(sender, e);
+        }
+
+        private void gotoTennis(object sender, RoutedEventArgs e)
+        {
+            Games.Content = new InstructieTennis(mainWindow);
+        }
+
+        private void Games_Navigated(object sender, NavigationEventArgs e)
+        {
+
         }
     }
 }
