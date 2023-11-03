@@ -19,6 +19,7 @@
     <None Remove="Images\Icons\UI_Icon_ArrowLeft.png" />
     <None Remove="Images\Icons\UI_Icon_ArrowLeftRight.png" />
     <None Remove="Images\Icons\UI_Icon_ArrowRight.png" />
+    <None Remove="Images\Instructie\LebronJamesDunk.png" />
     <None Remove="Images\Speler\Haar1.png" />
     <None Remove="Images\Speler\Haar2.png" />
     <None Remove="Images\Speler\Haar3.png" />
@@ -32,6 +33,12 @@
     <None Remove="Images\Speler\Speler3.png" />
     <None Remove="Images\Speler\Speler4.png" />
     <None Remove="Images\Startscherm.webp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Instructie\LebronJamesDunk.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>

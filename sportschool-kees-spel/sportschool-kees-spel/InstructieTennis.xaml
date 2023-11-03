@@ -5,10 +5,14 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:sportschool_kees_spel"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="1080" d:DesignWidth="1920"
       Title="InstructieTennis">
 
-    <Grid>
-        
+    <Grid Background="#FF586C70">
+        <Image Margin="0,0,390,0" Source="/Images/Instructie/tennis.png" Stretch="Fill"/>
+        <Button Content="Terug" HorizontalAlignment="Left" Height="75" Margin="70,58,0,0" VerticalAlignment="Top" Width="250" Click="Button_Click" Background="#FF6D92AC" FontFamily="Squada One" BorderBrush="Black" FontSize="30"/>
+        <Button Content="Start spel" HorizontalAlignment="Left" Height="75" Margin="1600,950,0,0" VerticalAlignment="Top" Width="250" Click="Button_Click" Background="#FF6D92AC" FontFamily="Squada One" BorderBrush="Black" FontSize="30"/>
+        <TextBlock HorizontalAlignment="Left" Height="576" Margin="1600,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="250" FontFamily="Squada One" FontSize="33" Foreground="White"><Run Text="Eerste tot 8 punten wint het spel"/><LineBreak/><Run/><LineBreak/><Run Text="Uitleg speler 1"/><LineBreak/><Run Text="Beweeg naar boven met W en beneden met S"/><LineBreak/><Run Text="Uitleg speler 2"/><LineBreak/><Run Text="Beweeg omhoog met ↑ en beneden met ↓"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="50" Margin="1600,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" FontFamily="Squada One" FontSize="40" TextAlignment="Center" Foreground="White"><Run Language="nl-nl" Text="Tennis"/></TextBlock>
     </Grid>
 </Page>
