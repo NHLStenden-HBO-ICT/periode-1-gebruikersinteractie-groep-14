@@ -19,6 +19,7 @@ namespace sportschool_kees_spel
     public partial class InstructieBasketball : Page
     {
         MainWindow mainWindow;
+        Basketball bp = new Basketball();
 
         public InstructieBasketball(MainWindow mainWindow)
         {
@@ -36,6 +37,11 @@ namespace sportschool_kees_spel
         private void Terug(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(null);
+        }
+
+        private void Window_KeyDown_1(object sender, KeyEventArgs e)
+        {
+            bp.MainWindow_KeyDown(sender, e);
         }
     }
 }

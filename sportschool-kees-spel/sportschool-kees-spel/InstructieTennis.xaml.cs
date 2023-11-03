@@ -19,6 +19,7 @@ namespace sportschool_kees_spel
     public partial class InstructieTennis : Page
     {
         MainWindow mainWindow;
+        Tennis tp = new Tennis();
 
         public InstructieTennis(MainWindow mainWindow)
         {
@@ -36,6 +37,16 @@ namespace sportschool_kees_spel
         private void Terug(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(null);
+        }
+
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            tp.OnKeyDown(sender, e);
+        }
+
+        private void Window_KeyUp(object sender, KeyEventArgs e)
+        {
+            tp.OnKeyUp(sender, e);
         }
     }
 }

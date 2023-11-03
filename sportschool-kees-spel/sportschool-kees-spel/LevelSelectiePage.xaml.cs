@@ -44,7 +44,7 @@ namespace sportschool_kees_spel
 
         private void Window_KeyDown_1(object sender, KeyEventArgs e)
         {
-            //bp.MainWindow_KeyDown(sender, e);
+            
         }
 
         private void gotoTennis(object sender, RoutedEventArgs e)

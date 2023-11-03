@@ -6,7 +6,9 @@
       xmlns:local="clr-namespace:sportschool_kees_spel"
       mc:Ignorable="d" 
       d:DesignHeight="1080" d:DesignWidth="1920"
-      Title="InstructieTennis">
+      Title="InstructieTennis" 
+      KeyDown="Window_KeyDown"
+      KeyUp ="Window_KeyUp">
 
     <Grid Background="#FF586C70">
         <Image Margin="0,0,390,0" Source="/Images/Instructie/tennis.png" Stretch="Fill"/>

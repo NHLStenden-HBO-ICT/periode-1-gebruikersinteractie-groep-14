@@ -22,7 +22,6 @@ namespace sportschool_kees_spel
     /// </summary>
     public partial class MainWindow : Window
     {
-        Basketball bp = new Basketball();
         public MainWindow()
         {
             InitializeComponent();
@@ -67,21 +66,6 @@ namespace sportschool_kees_spel
         public void gotoTennis()
         {
             Games.Content = new Tennis();
-        }
-
-        private void Window_KeyDown_1(object sender, KeyEventArgs e)
-        {
-            bp.MainWindow_KeyDown(sender, e);
-
-            //private void Window_KeyDown(object sender, KeyEventArgs e)
-            //{
-            //    tp.OnKeyDown(sender, e);
-            //}
-
-            //private void Window_KeyUp(object sender, KeyEventArgs e)
-            //{
-            //    tp.OnKeyUp(sender, e);
-            //}
         }
 
     }
