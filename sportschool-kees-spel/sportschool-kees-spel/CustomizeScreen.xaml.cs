@@ -31,6 +31,7 @@ namespace sportschool_kees_spel
         int minShirtValue = 2;
 
 
+
         public CustomizeScreen()
         {
             EquippedHeadValue = Properties.Settings.Default.EquippedHead;
@@ -160,6 +161,8 @@ namespace sportschool_kees_spel
         private void goBack(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(null);
+
+
         }
     }
 }

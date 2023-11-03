@@ -4,8 +4,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:sportschool_kees_spel"
+        KeyboardNavigation.DirectionalNavigation="Contained"
         mc:Ignorable="d"
-        Title="Sportschool Spel" Height="1080" Width="1920" Background="#586C70" KeyDown="Window_KeyDown" KeyUp="Window_KeyUp">
+        Title="Sportschool Spel" Height="1080" Width="1920" Background="#586C70" KeyDown="Window_KeyDown_1" >
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1462*"/>
@@ -21,10 +22,8 @@
             <Button Content="Afsluiten" MaxWidth="100" MinHeight="60" Margin="10,210,150,0" Click="Afsluiten" Background="#6D92AC" BorderBrush="Black" BorderThickness="3px"/>
 
         </StackPanel>
-        <Frame x:Name="Main" Margin="390,0,0,0" NavigationUIVisibility="Hidden" Grid.ColumnSpan="3" Navigated="Main_Navigated"/>
+        <Frame x:Name="Main" Margin="390,0,0,0" NavigationUIVisibility="Hidden" Grid.ColumnSpan="3" Navigated="Main_Navigated" KeyboardNavigation.DirectionalNavigation="Contained"/>
         <Image Source="Images/Black_shadow.png" Margin="-234,0,235,0" Height="1064" VerticalAlignment="Center"/>
-        <Frame x:Name="Games" NavigationUIVisibility="Hidden" Width="1920" Height="1080" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.ColumnSpan="3" Margin="0,0,0,0"/>
-        <Frame x:Name="Gegevens" NavigationUIVisibility="Hidden" Height="1080" VerticalAlignment="Center" Grid.ColumnSpan="3" HorizontalAlignment="Left" Width="1920"/>
-
+        <Frame x:Name="Games" NavigationUIVisibility="Hidden" Width="1920" Height="1080" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.ColumnSpan="3" Margin="0,0,0,0" KeyboardNavigation.DirectionalNavigation="Contained"/>
     </Grid>
 </Window>

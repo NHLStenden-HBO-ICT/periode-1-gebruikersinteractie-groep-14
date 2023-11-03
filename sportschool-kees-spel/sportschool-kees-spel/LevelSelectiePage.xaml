@@ -5,12 +5,15 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:sportschool_kees_spel"
       mc:Ignorable="d" 
-      d:DesignHeight="1080" d:DesignWidth="1920" Background="DarkCyan"
+      d:DesignHeight="1080" d:DesignWidth="1920" Background="DarkCyan" KeyDown="Window_KeyDown_1"
+      KeyboardNavigation.DirectionalNavigation="Contained"
       Title="LevelSelectiePage">
 
     <Grid>
         <Button Content="Terug" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="61" Width="121" Click="goBack"/>
-        <Button Content="Tennis" MinWidth="250" MinHeight="75" Margin="666,147,666,683" Click="gotoTennis" Background="#6D92AC" BorderBrush="Black" BorderThickness="3px"/>
-        <Frame x:Name="Games" NavigationUIVisibility="Hidden" Width="1920" Height="1080" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <Button Content="Basketball" MinWidth="250" MinHeight="75" Margin="666,446,666,384" Click="gotoBasketball" Background="#6D92AC" BorderBrush="Black" BorderThickness="3px"/>
+        <Frame x:Name="Games" NavigationUIVisibility="Hidden" Width="1920" Height="1080" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.ColumnSpan="3" Margin="0,0,0,0" KeyboardNavigation.DirectionalNavigation="Contained"/>
+
     </Grid>
 </Page>

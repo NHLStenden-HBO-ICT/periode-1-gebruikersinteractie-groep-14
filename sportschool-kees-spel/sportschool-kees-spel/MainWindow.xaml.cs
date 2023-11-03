@@ -13,6 +13,7 @@ using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Windows.Devices.I2c.Provider;
 
 namespace sportschool_kees_spel
 {
@@ -21,11 +22,10 @@ namespace sportschool_kees_spel
     /// </summary>
     public partial class MainWindow : Window
     {
-        Tennis tp = new Tennis();
+        Basketball bp = new Basketball();
         public MainWindow()
         {
-            InitializeComponent();
-            Games.Content = tp;
+            InitializeComponent(); 
         }
 
         private void Main_Navigated(object sender, NavigationEventArgs e)
@@ -40,7 +40,7 @@ namespace sportschool_kees_spel
 
         private void beginGame(object sender, RoutedEventArgs e)
         {
-            Games.Content = new LevelSelectiePage();
+            Games.Content = new LevelSelectiePage(this);
         }
 
         private void gotoCustom(object sender, RoutedEventArgs e)
@@ -57,6 +57,16 @@ namespace sportschool_kees_spel
         {
 
         }
+
+
+        public void testFunction()
+        {
+            Games.Content = new Basketball();
+        }
+
+        private void Window_KeyDown_1(object sender, KeyEventArgs e)
+        {
+            bp.MainWindow_KeyDown(sender, e);
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {

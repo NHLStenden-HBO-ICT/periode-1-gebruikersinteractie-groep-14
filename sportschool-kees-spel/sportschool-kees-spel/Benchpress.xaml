@@ -6,7 +6,8 @@
       xmlns:local="clr-namespace:sportschool_kees_spel"
       mc:Ignorable="d" 
       d:DesignHeight="1080" d:DesignWidth="1920" Background="DarkBlue"
-      Title="Benchpress">
+      Title="Benchpress"
+      KeyboardNavigation.DirectionalNavigation="Contained">
 
     <Grid>
         

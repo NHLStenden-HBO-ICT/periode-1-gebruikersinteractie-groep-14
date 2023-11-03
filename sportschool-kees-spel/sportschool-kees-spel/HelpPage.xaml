@@ -6,6 +6,7 @@
       xmlns:local="clr-namespace:sportschool_kees_spel"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
+      KeyboardNavigation.DirectionalNavigation="Contained"
       Title="HelpPage">
 
     <Grid>
