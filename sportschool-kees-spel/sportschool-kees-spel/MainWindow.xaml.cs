@@ -58,6 +58,7 @@ namespace sportschool_kees_spel
 
         }
 
+
         public void testFunction()
         {
             Games.Content = new Basketball();
@@ -66,6 +67,18 @@ namespace sportschool_kees_spel
         private void Window_KeyDown_1(object sender, KeyEventArgs e)
         {
             bp.MainWindow_KeyDown(sender, e);
+
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            tp.OnKeyDown(sender, e);
+        }
+
+        private void Window_KeyUp(object sender, KeyEventArgs e)
+        {
+            tp.OnKeyUp(sender, e);
         }
     }
+    
 }
+
+

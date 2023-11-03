@@ -3,15 +3,17 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:sportschool_kees_spel" Background="#586C70"
+      xmlns:local="clr-namespace:sportschool_kees_spel" Background="#99000000"
       mc:Ignorable="d" 
+
       d:DesignHeight="900" d:DesignWidth="800"
       KeyboardNavigation.DirectionalNavigation="Contained"
-      Title="GegevensPage">
+
 
     <Grid>
-        <TextBlock Text="Welkom bij Lift, Slam, Serve" FontSize="58" FontFamily="Squada One" FontWeight="Bold" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top" Width="906" Margin="0,67,0,0" Foreground="White"/>
-        <TextBlock FontSize="40" FontFamily="Arial" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top" Width="718" Margin="0,177,0,0" Foreground="White" Height="369" RenderTransformOrigin="0.5,0.5" >
+        <Rectangle Fill="#586C70" Width="800" Height="900" Margin="560,58,560,122"/>
+        <TextBlock Text="Welkom bij Lift, Slam, Serve" FontSize="56" FontFamily="Squada One" FontWeight="Bold" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top" Width="906" Margin="0,97,0,0" Foreground="White"/>
+        <TextBlock FontSize="40" FontFamily="Arial" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top" Width="718" Margin="0,211,0,0" Foreground="White" Height="369" RenderTransformOrigin="0.5,0.5" >
             <TextBlock.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -20,6 +22,25 @@
                     <TranslateTransform Y="1.801"/>
                 </TransformGroup>
             </TextBlock.RenderTransform><Run Text="Graag willen wij wat gegevens"/><LineBreak/><Run Text="van U om de speelervaring te"/><LineBreak/><Run Text="personalizeren"/><LineBreak/><Run/><LineBreak/><Run Text=""/></TextBlock>
-        <TextBox HorizontalAlignment="Left" Margin="102,373,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="298" Height="45"/>
+        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center" Width="444" Height="40" Margin="0,439,0,0" FontSize="26" TextChanged="TextBox_TextChanged" Style="{StaticResource text1}"></TextBox>
+        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center" Width="444" Height="40" Margin="0,439,0,0" FontSize="26" TextChanged="TextBox_TextChanged" Background="#00000000" BorderBrush="#00000000">Gebruikersnaam*</TextBox>
+
+        <TextBox HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center" Width="202" Height="40" Margin="740,536,0,0" FontSize="26" TextChanged="TextBox_TextChanged" Style="{StaticResource text1}"></TextBox>
+        <TextBox HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center" Width="202" Height="40" Margin="740,536,0,0" FontSize="26" TextChanged="TextBox_TextChanged" Background="#00000000" BorderBrush="#00000000">Voornaam*</TextBox>
+
+        <TextBox HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center" Width="202" Height="40" Margin="980,536,0,0" FontSize="26" TextChanged="TextBox_TextChanged" Style="{StaticResource text1}"></TextBox>
+        <TextBox HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center" Width="202" Height="40" Margin="980,536,0,0" FontSize="26" TextChanged="TextBox_TextChanged" Background="#00000000" BorderBrush="#00000000">Achternaam</TextBox>
+
+        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center" Width="444" Height="40" Margin="0,616,0,0" FontSize="26" TextChanged="TextBox_TextChanged" Style="{StaticResource text1}"></TextBox>
+        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center" Width="444" Height="40" Margin="0,616,0,0" FontSize="26" TextChanged="TextBox_TextChanged" Background="#00000000" BorderBrush="#00000000">E-mail*</TextBox>
+
+        <TextBox HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center" Width="202" Height="40" Margin="740,696,0,0" FontSize="26" TextChanged="TextBox_TextChanged" Style="{StaticResource text1}"></TextBox>
+        <TextBox HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center" Width="202" Height="40" Margin="740,696,0,0" FontSize="26" TextChanged="TextBox_TextChanged" Background="#00000000" BorderBrush="#00000000">Postcode</TextBox>
+
+        <TextBox HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center" Width="202" Height="40" Margin="980,696,0,0" FontSize="26" TextChanged="TextBox_TextChanged" Style="{StaticResource text1}"></TextBox>
+        <TextBox HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center" Width="202" Height="40" Margin="980,696,0,0" FontSize="26" TextChanged="TextBox_TextChanged" Background="#00000000" BorderBrush="#00000000">Provincie</TextBox>
+
+        <TextBlock Text="* velden met een ster zijn verplicht in te vullen" VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="White" Margin="0,915,0,0"/>
+        <Button Content="Doorgaan" Margin="694,777,694,207" Click="beginGame" Background="#6D92AC" BorderBrush="Black" BorderThickness="4px" Foreground="White" FontFamily="Squada One" FontWeight="Bold" FontSize="32"/>
     </Grid>
 </Page>

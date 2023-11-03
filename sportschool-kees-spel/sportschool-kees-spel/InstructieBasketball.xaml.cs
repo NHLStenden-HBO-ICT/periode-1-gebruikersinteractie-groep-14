@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -12,27 +10,22 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Microsoft.UI.Xaml;
 
 namespace sportschool_kees_spel
 {
     /// <summary>
-    /// Interaction logic for GegevensPage.xaml
+    /// Interaction logic for InstructieBasketball.xaml
     /// </summary>
-    public partial class GegevensPage : Page
+    public partial class InstructieBasketball : Page
     {
-        public GegevensPage()
+        public InstructieBasketball()
         {
-            InitializeComponent();        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
+            InitializeComponent();
         }
 
-        private void beginGame(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(null);
+
         }
     }
 }
