@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:sportschool_kees_spel"
         mc:Ignorable="d"
-        Title="Sportschool Spel" Height="1080" Width="1920" Background="#586C70">
+        Title="Sportschool Spel" Height="1080" Width="1920" Background="#586C70" KeyDown="Window_KeyDown" KeyUp="Window_KeyUp">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1462*"/>

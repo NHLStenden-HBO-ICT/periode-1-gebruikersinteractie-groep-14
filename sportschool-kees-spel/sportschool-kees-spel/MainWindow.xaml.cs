@@ -21,10 +21,11 @@ namespace sportschool_kees_spel
     /// </summary>
     public partial class MainWindow : Window
     {
+        Tennis tp = new Tennis();
         public MainWindow()
         {
             InitializeComponent();
-            Gegevens.Content = new GegevensPage();
+            Games.Content = tp;
         }
 
         private void Main_Navigated(object sender, NavigationEventArgs e)
@@ -56,5 +57,18 @@ namespace sportschool_kees_spel
         {
 
         }
+
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            tp.OnKeyDown(sender, e);
+        }
+
+        private void Window_KeyUp(object sender, KeyEventArgs e)
+        {
+            tp.OnKeyUp(sender, e);
+        }
     }
+    
 }
+
+

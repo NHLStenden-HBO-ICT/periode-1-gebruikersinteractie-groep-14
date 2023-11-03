@@ -1,0 +1,62 @@
+﻿<Page x:Class="sportschool_kees_spel.Tennis"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:sportschool_kees_spel"
+        Title="Tennis Game" Height="1080" Width="1920" Background="Aqua">
+
+    <Canvas Name="tennisCanvas">
+
+        <Image Source="/Images/image 12.png" Height="1080" Width="1920"/>
+        <Image 
+        Name="PlayerShirt" 
+        Source="/Images/Speler/Speler1.png" 
+        HorizontalAlignment="Center" 
+        VerticalAlignment="Center" 
+        Width="200" 
+        Height="200" 
+        RenderOptions.BitmapScalingMode="NearestNeighbor" IsEnabled="False"/>
+        <Image 
+        Name="PlayerHair" 
+        Source="/Images/Speler/Haar1.png" 
+        HorizontalAlignment="Center" 
+        VerticalAlignment="Center" 
+        Width="200" 
+        Height="200" 
+        RenderOptions.BitmapScalingMode="NearestNeighbor" IsEnabled="False"/>
+
+        <Rectangle Name="player1" 
+                 Width="200"
+                 Height= "200"
+                 Fill="Blue"
+                 Canvas.Left="20"
+                 Canvas.Top="440"
+                   KeyDown="OnKeyDown" 
+                   KeyUp="OnKeyUp"
+                   Focusable="True"/>
+        <Rectangle Name="player2"
+                 Width="200"
+                 Height="200"
+                 Fill="Red"
+                 Canvas.Left="1700"
+                 Canvas.Top="440"
+                   KeyDown="OnKeyDown" 
+                   KeyUp="OnKeyUp" 
+                   Focusable="True"/>
+        <Ellipse Name="ball"
+                 Width="50"
+                 Height="50"
+                 Fill="Green"
+                 Canvas.Left="935"
+                 Canvas.Top="515"/>
+        <TextBlock Name="winnerText" 
+                   FontSize="36" 
+                   Foreground="Black" 
+                   Width="400" 
+                   Height="100" 
+                   TextAlignment="Center"/>
+        <Button Name="restartButton" Content="Restart Game" Width="150" Height="30" Visibility="Collapsed" Canvas.Left="885" Canvas.Top="725"  />
+        <Button Name="quitButton" Content="Quit Game" Width="150" Height="30" Visibility="Collapsed" Canvas.Left="885" Canvas.Top="625" />
+
+    </Canvas>
+</Page>
+    
